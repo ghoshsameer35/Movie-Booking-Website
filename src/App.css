@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 100px rgb(0, 0, 0);
+  /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: rgb(22,22,22); */
+  background: linear-gradient(0deg, rgba(22, 22, 22, 1) 0%, rgba(128, 6, 0, 1) 100%);
+  /* border-radius: 3px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, rgba(128, 6, 0, 1) 0%, rgb(73, 73, 73) 100%);
+}
+
+.HomeContainer {
+  /* height: 100vh;
+  width: 100%; */
+  background-color: black;
+
+}
+
+/* navigation section */
+.navBar {
+  position: sticky;
+  /* border-radius: 55px; */
+  top: 0px;
+  height: 90px;
+  /* margin-left: 2%; */
+  /* width: 95%; */
+  background-color: #000000;
+  /* padding: 10px 20px; */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 150px;
+  width: 270px;
+  margin-top: -28px;
+
+}
+
+.serachbar {
+  width: 100%;
+}
+
+.textInput {
+  height: 6%;
+  width: 30%;
+  margin: 10px 0px 0px 0px;
+  position: absolute;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.833);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(223, 11, 11);
+  padding: 30px 0px 29px 40px;
+  background-color: rgba(255, 255, 255, 0);
+  /* border-bottom:  */
+  outline: none;
+  border-radius: 10px;
+}
+
+.serachbar img {
+  height: 20px;
+  margin: 30px 0px 0px 13px;
+}
+
+.navigation {
+  /* width: 300%; */
+  padding: 30px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 80px;
+  margin: 0px 0px 0px 500px;
+  padding: 0;
+}
+
+.navigation li {
+  color: white;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.login {
+  /* background-color: rgb(182, 51, 51); */
+  padding: 5px 35px 5px 35px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(79deg, rgb(211, 0, 0) 0%, rgb(152, 0, 0) 100%);
+  
+}
+.booking{
+  padding: 5px 35px 5px 35px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(79deg, rgb(211, 0, 0) 0%, rgb(152, 0, 0) 100%);
+  margin-left: 10%;
+}
+
+/* hero section  */
+.backGround {
+  width: 90%;
+  height: 450px;
+  margin-top: 5%;
+  margin-left: 4%;
+  border-radius: 25px;
+  /* overflow: hidden; */
+  /* background-color: rgba(63, 0, 35, 1); */
+  box-shadow: 0px -25px 80px rgb(85, 0, 47);
+}
+
+.img2 {
+  width: 90%;
+  height: 490px;
+  position: absolute;
+  border-radius: 25px;
+  mask-image: radial-gradient(103% 21% at 50% 102%, transparent 50%, rgb(255, 255, 255) 51%);
+
+}
+
+.overley2 {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.596), transparent);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overley2 h1 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 100px;
+  margin-top: 15%;
+  color: #ffffff;
+}
+
+.overley2 p {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  /* margin-top: 10%; */
+  color: #ffffff;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(168, 34, 34, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-button.prev {
+  left: 10px;
+}
+
+.nav-button.next {
+  right: 10px;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+
+/* card Section  */
+
+.cardMain {
+  margin-left: 4%;
+  height: 390px;
+  width: 90%;
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  align-items: center;
+}
+
+.heading {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading h1 {
+  padding: 60px;
+  /* background-color: rgb(0, 0, 0); */
+  color: white;
+  width: 50%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading p {
+  color: white;
+  /* background-color: rgb(0, 0, 0); */
+  padding: 60px;
+  width: 50%;
+  padding: 7% 0% 2% 42%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.cardBody {
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* transition: 0.5s ease-in-out; */
+}
+
+/* .cardBody:hover{
+margin-top: 30px;
+} */
+.cardBody img {
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.cardBody:hover img {
+  transform: scale(1.2);
+}
+
+.overley3 {
+  position: relative;
+  margin-top: -300px;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  z-index: 1;
+
+}
+
+.overley3 p {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 100% 0% 0% 0%;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.overley4 {
+  position: relative;
+  margin-top: -300px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  z-index: 1;
+}
+
+.overley4 p {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 100% 0% 0% 0%;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.overley5 {
+  position: relative;
+  margin-top: -300px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  z-index: 1;
+}
+
+.overley5 p {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 100% 0% 0% 0%;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Movie Components  */
+.movie_main {
+  background-color: #000;
+  /* height: 100vh; */
+  /* width: 100%; */
+}
+
+.movie {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardBody1 {
+  height: 300px;
+  width: 250px;
+  position: relative;
+  /* background-color: red; */
+  border-radius: 10px;
+  overflow: hidden;
+  /* padding: 10px; */
+}
+
+.cardBody1 img {
+  height: 300px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 25px;
+  transition: 0.5s ease-in-out;
+}
+
+.cardBody1:hover img {
+  transform: scale(1.2);
+}
+
+.Movie_containr {
+  background-color: #00000081;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.Movie_Main {
+  height: 100vh;
+  width: 40%;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Movie_Card {
+  background-color: rgb(255, 255, 255);
+  height: 60%;
+  width: 100%;
+}
+
+.Movie_Card img {
+  width: 100%;
+  height: 100px;
+  height: 420px;
+}
+
+.Movie_Details {
+  background-color: rgb(0, 0, 0);
+  height: 40%;
+  width: 100%;
+}
+.close{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  z-index: 99;
+  margin-left: 40%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.Movie_Details h1 {
+  color: #fff;
+  padding-left: 10%;
+  position: relative;
+  z-index: 99;
+}
+
+.Movie_Details p {
+  color: white;
+  padding: 0px 60px;
+}
+
+.overley6 {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  z-index: 1;
+  margin: -417px 0px 0px 0px;
+}
+
+.staticcard {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 91px;
+}
+
+.staticcardmain {
+  height: 150px;
+  width: 300px;
+  border-radius: 10px;
+  background: rgb(67, 30, 92);
+  background: linear-gradient(140deg, rgba(67, 30, 92, 1) 0%, rgba(128, 42, 144, 1) 50%, rgba(63, 0, 35, 1) 100%);
+  box-shadow: -25px 13px 80px rgba(63, 0, 35, 1);
+}
+
+.staticcardmain h4 {
+  color: white;
+  padding: 15px 0px 0px 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hand {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  float: right;
+  margin-right: 20px;
+}
+
+.heart {
+  color: rgba(246, 238, 247, 1);
+  font-size: 60px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.static h1 {
+  padding: 10px 0px 0px 60px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.icon {
+  color: white;
+}
+
+/* Footer */
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.para {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.line {
+  width: 100%;
+  height: 0.4px;
+  background-color: #fff;
+}
+
+/* Login  */
+.loginmain {
+  background-color: #000;
+}
+
+.logincard_maim {
+  width: 100%;
+  height: 69.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logincard {
+  height: 430px;
+  width: 700px;
+  background-color: rgba(201, 199, 199, 0.412);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.round {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0% 0% 50% 50%;
+  margin: -70px 0px 46px 270px;
+}
+
+.round img {
+  height: 193px;
+  margin: 0px 0px 0px -84px;
+}
+
+.logincard input {
+  height: 10%;
+  width: 50%;
+  margin-bottom: 5%;
+  padding: 3%;
+  border-radius: 25px;
+  border: none;
+}
+
+.logincard button {
+  height: 40px;
+  width: 30%;
+  border: none;
+}
+
+.logincard h5 {
+  margin-top: 30px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* SignUp */
+.signmain {
+  background-color: #000;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signcard_main {
+  height: 70vh;
+  width: 50%;
+  background-color: rgba(201, 199, 199, 0.412);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.signcard_main input {
+  margin-top: 10px;
+  height: 40px;
+  width: 500px;
+  border-radius: 10px;
+  border: none;
+  /* transition: 0.5s ease-in; */
+}
+
+/* .signcard_main input:hover{
+  box-shadow: -15px 13px 15ppx rgb(63, 7, 0);
+} */
+.signcard_main h5 {
+  margin-top: 20px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.signcard_main button {
+  margin-top: 20px;
+  height: 40px;
+  width: 30%;
+  border-radius: 25px;
+}
+
+/* Booking Page************************  */
+.BookingMain {
+  background-color: #000;
+  height: 100vh;
+}
+
+.Bookingnav {
+  /* width: 100%;
+  height: 100px; */
+  display: flex;
+  float: right;
+}
+
+.Bookingnav p {
+  color: rgb(255, 255, 255);
+  margin: 6px 40px 0px 0px;
+}
+
+.Bookingnav button {
+  padding: 5px 35px 5px 35px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(79deg, rgb(211, 0, 0) 0%, rgb(152, 0, 0) 100%);
+  
+}
+
+.BookingCard {
+  height: 80%;
+  width: 70%;
+  background-color: #fff;
+  margin-top: 5%;
+  margin-left: 15%;
+  border-radius: 20px;
+}
+
+.moviename {
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 5%;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name {
+  height: 40px;
+  width: 40%;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+
+.date {
+  height: 40px;
+    width: 15%;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.time {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.time p {
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: -4px;
+}
+.ticket {
+  margin-top: 20px;
+  display: flex;
+}
+.btn1{
+  height: 30px;
+    width: 5%;
+    border: 1px solid black;
+    margin-right: 3%;
+    margin-left: 3%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 10px 10px 10px black;
+}
+.ticket p{
+  height: 30px;
+  width: 5%;
+  padding-left: 2%;
+  border: 1px solid;
+  color: black;
+  background-color: rgb(255, 241, 229);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.ticket h4{
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  /* margin-top: -4px; */
+  padding-left: 6%;
+
+}
+.submitbtn{
+   height: 40px;
+  border-radius: 10px;
+  width: 10%;
+  border: none;
+  box-shadow: 10px 10px 10px black;
+  margin-left: 5%;
+}
+.payment{
+ height: 40px;
+  border-radius: 10px;
+  width: 20%;
+  border: none;
+  box-shadow: 10px 10px 10px black;
+  margin: 0px 0px 0px 800px;
+}
+.DisplayData{
+  margin-left: 6%;
+}
+.payment a{
+  text-decoration: none;
+  color: #000;
+}
+/* Payment  */
+.paysucess{
+  height: 65vh;
+  text-align: center;
+  margin-top: 10%;
+}
+.font{
+  font-size: 100px;
+}
+.GotoHome a{
+  text-decoration: none;
+  color: #000;
+}
+.GotoHome{
+  height: 40px;
+  border-radius: 10px;
+  width: 10%;
+  border: none;
+  box-shadow: 10px 10px 10px black;
+}
+
